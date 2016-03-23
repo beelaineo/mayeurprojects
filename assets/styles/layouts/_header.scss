@@ -1,0 +1,76 @@
+header.banner {
+	z-index:10;
+	padding-top:40px;
+	margin-bottom: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
+  .brand {
+	  float:left;
+	  img {
+		 width: 200px; 
+		  height:auto;
+		  @media screen and (max-width: 768px) {
+			  width: 180px;
+			}
+	  	}
+  }
+  .container {
+	  .navbar-header {
+		  button {
+			  margin-top:24px;
+			  .icon-bar {
+			  background: #000;
+		  		}
+		  }  
+	  }	
+	  nav.navbar-collapse {
+		  	.nav.navbar-nav {
+				margin-left:40px;
+				margin-top: 24px;
+				& > li {
+					float:left;
+					&.active {
+						& > a {
+							border-bottom: 4px solid $turquoise;
+						}
+					}
+					& > a {
+						text-transform: uppercase;
+						font-weight: 500;
+						&:hover, &:focus {
+							background-color: transparent;
+					  		font-weight: 600;
+						}
+						@media screen and (max-width: 768px) {
+							padding:5px 5px;
+							font-size: 0.8em;
+						}
+					}
+			  	}
+			  	@media screen and (max-width: 768px) {
+				  margin-left: 0px;
+				}
+			}
+		}
+	}
+}
+
+body.home {
+	header.banner {
+	}
+}
+
+body.info, body.residencies, body.residency, body.artists, body.single-artist {
+	header.banner {
+	}
+}
+
+body.chat {
+	header.banner {
+	}
+}
+
+body.exhibitions, body.exhibition {
+	header.banner {
+	}
+}

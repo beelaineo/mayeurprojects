@@ -1,0 +1,216 @@
+// Artist page (single)
+
+body {
+	#page.blog {
+		.container {
+			.content.row {
+				main {
+					article {
+						margin-bottom: 40px;
+						header {
+							margin-bottom: 20px;
+							time {
+								font-family: $metafont;
+								font-size: 0.85em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#page.single-artist {
+		.container {
+			.content.row {
+				main {
+					margin-top: 130px;
+					margin-bottom: 100px;
+					article {
+						.entry-content {
+							header {
+								h3 {
+									text-transform:uppercase;
+									font-weight: 600;
+									margin-bottom:20px;
+								}
+							}
+							.artist.description {
+								font-size: 18px;
+								text-align: justify;
+								margin: 0px 0px 30px 0px;
+							}
+							.artist.extra {
+								font-family: $metafont;
+								filter: blur(1px);
+								margin-top:20px;
+								a {
+									text-transform: uppercase;
+									font-size: 1.5em;
+									font-weight: 500;
+									text-shadow: 0px 0px 5px $turquoise;
+								}
+							}
+							.artist.projects {
+								font-family: $metafont;
+								margin-top: 20px;
+								&>ul {
+									list-style: none;
+									-webkit-margin-before: 0em;
+									-webkit-margin-after: 0em;
+									-webkit-margin-start: 0px;
+									-webkit-margin-end: 0px;
+									-webkit-padding-start: 0px;
+									.artist.project {
+										margin-bottom:10px;
+										a:hover, a:focus {
+											.project-type {
+												font-weight: 400;
+											}
+										}
+										.project-type {
+											text-transform:uppercase;
+											font-size: 12px;
+										}
+										.project-title {
+											
+										}
+									}
+								}
+							}
+							.artist.gallery {
+								.artist.gallery.block {
+									margin-bottom:100px;
+									.caption {
+										margin-top:10px;
+										font-size: 12px;
+										font-family: $metafont;
+										.available-work {
+											float:right;
+											margin-left: 20px;
+											margin-bottom: 60px;
+											border-bottom: 2px solid $turquoise;
+											font-weight: 500;
+										}
+										.popover {
+											font-family: $metafont;
+											max-width: 320px;
+											.popover-title {
+												background: $turquoise;
+											}
+										}
+									}
+								}
+
+								.gallery.pagination {
+									width:100%;
+									text-align:center;
+									a.wpv-filter-previous-link.js-wpv-pagination-previous-link {
+										float:left;
+									}
+									a.wpv-filter-next-link.js-wpv-pagination-next-link {
+										float:right;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	#page.single-project {
+		.container {
+			.content.row {
+				main {
+					margin-top: 30px;
+					margin-bottom: 40px;
+					article {
+						.entry-content {
+							header {
+								.project.info {
+									text-align:right;
+									float:right;
+									font-family: $metafont;
+								}
+								margin-bottom: 40px;
+								.exhibition.artist {
+									text-transform:uppercase;
+									font-weight: 600;
+									font-size: 28px;
+									margin-bottom:10px;
+									margin-top:0;
+								}
+								.exhibition.title {
+									font-weight: 400;
+									margin-top: 10px;
+									font-size: 28px;
+									margin-bottom: 10px
+								}
+								.exhibition.dates {
+									font-weight: 600;
+									font-size: 14px;
+								}
+							}
+							.project.description {
+								font-size: 18px;
+								text-align: justify;
+								margin: 0px 0px 30px 0px;
+							}
+							.exhibition.extra {
+								font-family: $metafont;
+								margin-top: 40px;
+							}
+							.project.gallery {
+								.project.gallery.block {
+									margin-bottom:100px;
+									.caption {
+										margin-top:10px;
+										font-size: 12px;
+										font-family: $metafont;
+										.available-work {
+											float:right;
+											margin-left: 20px;
+											margin-bottom: 60px;
+											border-bottom: 2px solid $turquoise;
+											font-weight: 500;
+										}
+										.popover {
+											font-family: $metafont;
+											max-width: 320px;
+											.popover-title {
+												background: $turquoise;
+											}
+										}
+									}
+								}
+								.gallery.pagination {
+									width:100%;
+									text-align:center;
+									a.wpv-filter-previous-link.js-wpv-pagination-previous-link {
+										float:left;
+									}
+									a.wpv-filter-next-link.js-wpv-pagination-next-link {
+										float:right;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.chocolat-wrapper {
+		z-index: 100;
+		.chocolat-bottom {
+			bottom: 20px;
+			background:transparent;
+			color: #000;
+			font-family: $metafont;
+			.chocolat-pagination {
+			}
+		}
+	}
+}

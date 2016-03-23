@@ -1,0 +1,33 @@
+footer {
+  position: relative;
+  margin: 60px auto 60px auto;
+  padding-bottom: 40px;
+  .copyright {
+	  margin-top: 24px;
+	  text-align:center;
+	  p {
+		  text-align: center;
+	  }
+	  @media screen and (max-width: 768px) {
+		  display:inline-block;
+		  float:left;
+		  text-align: left;
+	  }
+  }
+  .social-col {
+	  float:right;
+	  margin-right: 40px;
+	  margin-top:24px;
+	  a {
+		  margin-left:20px;
+		  img {
+			  width: 24px;
+			  height:auto;
+		  }
+	  }
+	  @media screen and (max-width: 768px) {
+		  display: inline-block;
+		  margin-right: 10px;
+	  }
+  }
+}

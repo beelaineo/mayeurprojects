@@ -1,0 +1,18 @@
+body#tinymce {
+  margin: 12px !important;
+  background: $white;
+  font-family: "Avenir Next W04",Helvetica,sans-serif;
+  height: auto;
+}
+
+
+
+body#tinymce:after, body#tinymce:before {
+    background: inherit;
+    content: none;
+    display: inherit;
+    height: auto;
+    position: relative;
+    width: inherit;
+    z-index: 0;
+}
